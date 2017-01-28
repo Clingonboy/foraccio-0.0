@@ -2,6 +2,7 @@ package it.provaforaccio;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Mazzo {
@@ -28,8 +29,10 @@ public class Mazzo {
 				v++;
 			}
 			
-			
+			Collections.shuffle(carte);
 		}
+		
+		
 	}
 	
 	public Carta getCarta(int n)
@@ -38,5 +41,5 @@ public class Mazzo {
 		return carta;
 		
 	}
-
+	
 }
