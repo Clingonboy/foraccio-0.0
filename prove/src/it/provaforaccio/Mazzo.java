@@ -29,17 +29,31 @@ public class Mazzo {
 				v++;
 			}
 			
+			// comando per mescolare le carte
 			Collections.shuffle(carte);
 		}
 		
 		
 	}
 	
+	/**
+	 * Restituisce la carta alla posizione n
+	 * @param n
+	 * @return
+	 */
 	public Carta getCarta(int n)
 	{
 		Carta carta = carte.get(n);
 		return carta;
 		
+	}
+	
+	/**
+	 * Restituisce le carte del mazzo
+	 * @return un ArrayList di carte
+	 */
+	public List<Carta> getCarte(){
+		return carte;
 	}
 	
 }

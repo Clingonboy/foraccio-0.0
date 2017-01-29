@@ -47,5 +47,17 @@ public class Carta {
 		this.seme = seme;
 	}
 	
+	/**
+	 * Costruttore per creare una carta uguale ad una carta
+	 * esistente passata come parametro
+	 * @param unaCarta
+	 */
+	public Carta(Carta unaCarta)
+	{
+		this.valore = unaCarta.getValore();
+		this.nome = unaCarta.getNome();
+		this.seme = unaCarta.getSeme();
+	}
+	
 
 }
