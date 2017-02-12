@@ -47,6 +47,23 @@ public class Mazzo {
 		return carta;
 		
 	}
+	/**
+	 * Metodo che restituisce una lista di carte presa dalle carte del mazzo
+	 * @param inizio indice da cui partire a prendere le carte dal mazzo
+	 * @param fine indice del mazzo in cui finisce la lista di carte
+	 * @return una lista di carte
+	 */
+	public List<Carta> getListCarte(int inizio, int fine)
+	{
+		ArrayList<Carta> carteDaDare = new ArrayList<Carta>();
+		
+		for (int x = inizio; x < fine; x++ )
+		{
+			carteDaDare.add(this.carte.get(x));
+		}
+		
+		return carteDaDare;
+	}
 	
 	/**
 	 * Restituisce le carte del mazzo
