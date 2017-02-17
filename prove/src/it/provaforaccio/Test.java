@@ -3,6 +3,13 @@ package it.provaforaccio;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Questa classe ha solo lo scopo di fare dei test sulla funzionalità delle
+ * altre classi
+ * 
+ * @author eugenio
+ *
+ */
 public class Test {
 	
 	private Mazzo mazzo;
@@ -39,18 +46,23 @@ public class Test {
 	
 	/**
 	 * Costruttore per il gioco,
-	 * è una prova
+	 * è una prova ---
+	 * 
+	 * In questa classe vengono creati 4 giocatori
+	 * vengono assegnate le carte ad ogni giocatore
+	 * 
 	 */
 	public Test()
 	{
 		// Creazione del mazzo
 		mazzo = new Mazzo();
 		// Creazione di giocatori
+		// I giocatori con posGiocatore 1 e 3 sono compagni e 2 e 4 sono compagni
 		giocatori = new ArrayList<Giocatore>();
-		giocatori.add(new Giocatore());
-		giocatori.add(new Giocatore());
-		giocatori.add(new Giocatore());
-		giocatori.add(new Giocatore());
+		giocatori.add(new Giocatore(1));
+		giocatori.add(new Giocatore(2));
+		giocatori.add(new Giocatore(3));
+		giocatori.add(new Giocatore(4));
 		
 		//Ciclo per assegnare le carte ai giocatori
 		int partenza = 0;
@@ -59,8 +71,11 @@ public class Test {
 			this.giocatori.get(x).setCarteInMano(this.mazzo.getListCarte(partenza, partenza+13));
 			partenza +=13;
 		}
-	
+		/// Creare un sistema per provare a far giocare le carte ai giocatori
+		
+		
 		
 	}
+	
 
 }

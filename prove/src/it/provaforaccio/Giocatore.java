@@ -11,16 +11,20 @@ public class Giocatore {
 	private List<Carta> carteGiocate; // ArreyList con le carte giocate
 	private int manoInCorso;
 	private String type;
+	private Tavolo tavolo;
 	
 	
 	
 	/**
 	 * Costrutotre base
 	 */
-	public Giocatore(){
+	public Giocatore(int posizione){
 		carteInMano = new ArrayList<Carta>();
 		carteGiocate = new ArrayList<Carta>();
 		manoInCorso = 0;
+		setPosizione(posizione);
+		tavolo = new Tavolo();
+		
 	}
 	
 	/**
@@ -48,6 +52,24 @@ public class Giocatore {
 	public String getType()
 	{
 		return this.type;
+	}
+	
+	/**
+	 * Motodo che assegna una posizione al giocatore
+	 * @param posizione del giocatore sul tavolo
+	 */
+	private void setPosizione(int posizione)
+	{
+		this.posGiocatore = posizione;
+	}
+	
+	/**
+	 * Motodo per chiedere la posizione del giocatore
+	 * @return int posizione del giocatore sul tavolo
+	 */
+	public int getPosizione()
+	{
+		return this.posGiocatore;
 	}
 	
 	/////// metodo temporaneo per testare il giocatotre

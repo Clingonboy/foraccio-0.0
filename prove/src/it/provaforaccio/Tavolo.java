@@ -34,7 +34,7 @@ public class Tavolo {
 	 * Metodo per aggiungere una carta al tavolo
 	 * @param carta
 	 */
-	public void addCarta (Carta carta)
+	public void addCartaGiocata (Carta carta)
 	{
 		this.carteSulTavolo.add(carta) ;
 	}

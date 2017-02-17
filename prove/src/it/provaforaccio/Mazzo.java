@@ -15,6 +15,7 @@ public class Mazzo {
 	
 	/**
 	 * Costruttore, crea un mazzo di carte
+	 * oltre a creare il mazzo lo mescola
 	 */
 	public Mazzo()
 	{
